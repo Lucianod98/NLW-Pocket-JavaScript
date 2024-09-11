@@ -56,6 +56,10 @@ const listarMeta = async () => {
     console.log("meta(s) concluida(s)!")
 }
 
+const metasRealizadas = async () => {
+    const realizadas =
+}
+
 const start = async () => {
 
     while(true){
@@ -74,6 +78,10 @@ const start = async () => {
 
                 },
                 {
+                    name: "metas realizadas",
+                    value: "realizadas"
+                },
+                {
                     name: "sair",
                     value: "sair"
                 }
@@ -88,6 +96,9 @@ const start = async () => {
             case "listar":
                 await listarMeta()
                 break
+            case "realizadas":
+                await metasRealizadas()
+
             case "sair":
                 console.log("disconnected.")
                 return
